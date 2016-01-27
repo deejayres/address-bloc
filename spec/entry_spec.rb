@@ -1,13 +1,9 @@
 require_relative '../models/entry'
 
-# standard first line of RSpec
 RSpec.describe Entry do
-#use context to structure text and show that we're testing the attributes of Entry
   describe "attributes" do
-#tests are separated with it method, each it is a separate test
     it "should respond to name" do
       entry = Entry.new('Ada Lovelace', '010.012.1815', 'augusta.king@lovelace.com')
-# describes expectations of the test
       expect(entry).to respond_to(:name)
     end
 
